@@ -1,0 +1,12 @@
+{application, rockse, [
+	{description, "RocksDB Erlang Application"},
+	{vsn, "0.1.0"},
+	{modules, [rockse_sup, rockse, rockse_tbl]},
+	{registered, [rockse_sup, rockse]},
+	{applications, [
+		kernel,
+		stdlib
+	]},
+	{mod, {rockse, []}},
+	{env, []}
+]}.
